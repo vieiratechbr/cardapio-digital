@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brasa & Craft – Hamburgeria Artesanal</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Bebas Neue (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===========================
+       HEADER
+  =========================== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+
+      <!-- Logo -->
+      <div class="header__logo">
+        <div class="logo-mark">
+          <span class="logo-flame">🔥</span>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">Brasa <em>&amp;</em> Craft</span>
+          <span class="logo-tagline">Artesanal · Premium · Autêntico</span>
+        </div>
+      </div>
+
+      <!-- Info rápida -->
+      <div class="header__info">
+        <span class="header__info-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Seg–Dom: 11h–23h
+        </span>
+        <span class="header__info-item">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Vila Madalena, SP
+        </span>
+      </div>
+
+      <!-- CTA WhatsApp -->
+      <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20fazer%20um%20pedido%20no%20Brasa%20%26%20Craft!" 
+         class="btn btn--whatsapp header__cta" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Pedir agora
+      </a>
+
+      <!-- Carrinho trigger -->
+      <button class="cart-trigger" id="cartTrigger" aria-label="Ver carrinho">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="cart-badge" id="cartBadge">0</span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- ===========================
+       HERO / BANNER PRINCIPAL
+  =========================== -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg">
+      <!-- Placeholder visual de hero com CSS -->
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__content">
+      <span class="hero__badge">⚡ Resposta em até 5 min</span>
+      <h1 class="hero__title">O melhor<br/><em>hambúrguer</em><br/>da Vila</h1>
+      <p class="hero__sub">Carnes selecionadas, pão brioche artesanal e sabores que você não esquece. Peça agora pelo WhatsApp.</p>
+      <div class="hero__actions">
+        <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20fazer%20um%20pedido%20no%20Brasa%20%26%20Craft!"
+           class="btn btn--whatsapp btn--lg" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Pedir no WhatsApp
+        </a>
+        <a href="#cardapio" class="btn btn--outline btn--lg">Ver cardápio</a>
+      </div>
+      <div class="hero__stats">
+        <div class="hero__stat"><strong>4.9★</strong><span>Avaliação</span></div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat"><strong>+2mil</strong><span>Pedidos/mês</span></div>
+        <div class="hero__stat-divider"></div>
+        <div class="hero__stat"><strong>30min</strong><span>Entrega média</span></div>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__burger-placeholder">
+        <div class="burger-visual">
+          <div class="bun bun--top"></div>
+          <div class="lettuce"></div>
+          <div class="cheese"></div>
+          <div class="patty"></div>
+          <div class="patty patty--2"></div>
+          <div class="bun bun--bot"></div>
+        </div>
+        <div class="hero__glow"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       AVISO DE ENTREGA
+  =========================== -->
+  <div class="delivery-bar">
+    <span>🛵 Taxa de entrega: <strong>R$ 6,00</strong></span>
+    <span class="bar-divider">|</span>
+    <span>🛒 Pedido mínimo: <strong>R$ 30,00</strong></span>
+    <span class="bar-divider">|</span>
+    <span>⏱ Tempo de preparo: <strong>25–40 min</strong></span>
+  </div>
+
+  <!-- ===========================
+       CATEGORIAS / NAV DO MENU
+  =========================== -->
+  <nav class="cat-nav" id="cardapio">
+    <div class="cat-nav__inner">
+      <button class="cat-btn active" data-target="hamburgueres">🍔 Hambúrgueres</button>
+      <button class="cat-btn" data-target="combos">🎁 Combos</button>
+      <button class="cat-btn" data-target="porcoes">🍟 Porções</button>
+      <button class="cat-btn" data-target="bebidas">🥤 Bebidas</button>
+      <button class="cat-btn" data-target="sobremesas">🍨 Sobremesas</button>
+    </div>
+  </nav>
+
+  <!-- ===========================
+       CARDÁPIO — HAMBÚRGUERES
+  =========================== -->
+  <section class="menu-section" id="hamburgueres">
+    <div class="section-header">
+      <h2 class="section-title"><span>🍔</span> Hambúrgueres</h2>
+      <p class="section-sub">Carnes selecionadas, smash na chapa e pão brioche artesanal</p>
+    </div>
+    <div class="cards-grid">
+
+      <!-- Card 1 -->
+      <div class="card" data-id="1" data-name="X-Brasa Clássico" data-price="29.90">
+        <div class="card__img-wrap">
+          <div class="card__img card__img--1">
+            <div class="card__emoji">🍔</div>
+          </div>
+          <span class="card__badge badge--hot">Mais Pedido</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">X-Brasa Clássico</h3>
+          <p class="card__desc">Blend de fraldinha 180g, queijo cheddar cremoso, alface americana, tomate, cebola caramelizada e molho da casa no brioche artesanal.</p>
+          <div class="card__footer">
+            <span class="card__price">R$ 29,90</span>
+            <button class="btn btn--add" onclick="addToCart(1, 'X-Brasa Clássico', 29.90)">+ Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card" data-id="2" data-name="Double Smash Craft" data-price="38.90">
+        <div class="card__img-wrap">
+          <div class="card__img card__img--2">
+            <div class="card__emoji">🍔</div>
+          </div>
+          <span class="card__badge badge--new">Novo</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Double Smash Craft</h3>
+          <p class="card__desc">Dois smash burgers de 90g, queijo americano duplo, picles crocante, mostarda artesanal e maionese defumada. Smashado na brasa.</p>
+          <div class="card__footer">
+            <span class="card__price">R$ 38,90</span>
+            <button class="btn btn--add" onclick="addToCart(2, 'Double Smash Craft', 38.90)">+ Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="card" data-id="3" data-name="Brasa BBQ Bacon" data-price="36.90">
+        <div class="card__img-wrap">
+          <div class="card__img card__img--3">
+            <div class="card__emoji">🥩</div>
+          </div>
+          <span class="card__badge badge--promo">Promoção</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Brasa BBQ Bacon</h3>
+          <p class="card__desc">Blend especial 200g, bacon crispy, queijo gouda, cebola roxa, molho barbecue defumado e aioli de alho negro. Um clássico reinventado.</p>
+          <div class="card__footer">
+            <span class="card__price">R$ 36,90</span>
+            <button class="btn btn--add" onclick="addToCart(3, 'Brasa BBQ Bacon', 36.90)">+ Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="card" data-id="4" data-name="Mushroom Truffle" data-price="41.90">
+        <div class="card__img-wrap">
+          <div class="card__img card__img--4">
+            <div class="card__emoji">🍄</div>
+          </div>
+          <span class="card__badge badge--craft">Artesanal</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Mushroom Truffle</h3>
+          <p class="card__desc">Blend premium 200g, cogumelos shimeji salteados, queijo brie, rúcula, maionese de trufas negras e brioche de ervas. Sofisticação pura.</p>
+          <div class="card__footer">
+            <span class="card__price">R$ 41,90</span>
+            <button class="btn btn--add" onclick="addToCart(4, 'Mushroom Truffle', 41.90)">+ Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===========================
+       CARDÁPIO — COMBOS
+  =========================== -->
+  <section class="menu-section" id="combos">
+    <div class="section-header">
+      <h2 class="section-title"><span>🎁</span> Combos</h2>
+      <p class="section-sub">Hambúrguer + porção + bebida com preço especial</p>
+    </div>
+    <div class="cards-grid">
+
+      <div class="card" data-id="5" data-name="Combo Clássico" data-price="44.90">
+        <div class="card__img-wrap">
+          <div class="card__img card__img--5">
+            <div class="card__emoji">🎁</div>
+          </div>
+          <span class="card__badge badge--hot">Mais Pedido</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Combo Clássico</h3>
+          <p class="card__desc">X-Brasa Clássico + Batata Frita Média + Refrigerante Lata 350ml. O favorito da galera com preço imbatível.</p>
+          <div class="card__footer">
+            <span class="card__price">R$ 44,90</span>
+            <button class="btn btn--add" onclick="addToCart(5, 'Combo Clássico', 44.90)">+ Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-id="6" data-name="Combo Premium" data-price="59.90">
+        <div class="card__img-wrap">
+          <div class="card__img card__img--6">
+            <div class="card__emoji">👑</div>
+          </div>
+          <span class="card__badge badge--craft">Premium</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Combo Premium</h3>
+          <p class="card__desc">Mushroom Truffle ou Brasa BBQ Bacon + Onion Rings Crispy + Milk Shake 500ml. Experiência completa no conforto da sua casa.</p>
+          <div class="card__footer">
+            <span class="card__price">R$ 59,90</span>
+            <button class="btn btn--add" onclick="addToCart(6, 'Combo Premium', 59.90)">+ Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-id="7" data-name="Combo Duplo Casal" data-price="79.90">
+        <div class="card__img-wrap">
+          <div class="card__img card__img--7">
+            <div class="card__emoji">❤️</div>
+          </div>
+          <span class="card__badge badge--promo">Promoção</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Combo Duplo Casal</h3>
+          <p class="card__desc">2 hambúrgueres à sua escolha + Batata Frita Grande + 2 bebidas. Ideal para curtir junto. Economia real de R$ 15,00.</p>
+          <div class="card__footer">
+            <span class="card__price">R$ 79,90</span>
+            <button class="btn btn--add" onclick="addToCart(7, 'Combo Duplo Casal', 79.90)">+ Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===========================
+       CARDÁPIO — PORÇÕES
+  =========================== -->
+  <section class="menu-section" id="porcoes">
+    <div class="section-header">
+      <h2 class="section-title"><span>🍟</span> Porções</h2>
+      <p class="section-sub">Acompanhamentos crocantes pra completar o pedido</p>
+    </div>
+    <div class="cards-grid">
+
+      <div class="card" data-id="8" data-name="Batata Frita Média" data-price="16.90">
+        <div class="card__img-wrap">
+          <div class="card__img card__img--8">
+            <div class="card__emoji">🍟</div>
+          </div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Batata Frita Média</h3>
+          <p class="card__desc">Batatas rústicas, crocantes por fora e macias por dentro, temperadas com sal grosso e páprica defumada.</p>
+          <div class="card__footer">
+            <span class="card__price">R$ 16,90</span>
+            <button class="btn btn--add" onclick="addToCart(8, 'Batata Frita Média', 16.90)">+ Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-id="9" data-name="Batata Frita Grande" data-price="22.90">
+        <div class="card__img-wrap">
+          <div class="card__img card__img--9">
+            <div class="card__emoji">🍟</div>
+          </div>
+          <span class="card__badge badge--hot">Mais Pedido</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Batata Frita Grande</h3>
+          <p class="card__desc">Porção generosa para dividir. As mesmas batatas rústicas com tempero especial da casa. Serve até 2 pessoas.</p>
+          <div class="card__footer">
+            <span class="card__price">R$ 22,90</span>
+            <button class="btn btn--add" onclick="addToCart(9, 'Batata Frita Grande', 22.90)">+ Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-id="10" data-name="Onion Rings Crispy" data-price="19.90">
+        <div class="card__img-wrap">
+          <div class="card__img card__img--10">
+            <div class="card__emoji">🧅</div>
+          </div>
+          <span class="card__badge badge--new">Novo</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Onion Rings Crispy</h3>
+          <p class="card__desc">Anéis de cebola empanados em massa especial com cerveja, fritos até dourar. Servidos com molho ranch da casa.</p>
+          <div class="card__footer">
+            <span class="card__price">R$ 19,90</span>
+            <button class="btn btn--add" onclick="addToCart(10, 'Onion Rings Crispy', 19.90)">+ Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===========================
+       CARDÁPIO — BEBIDAS
+  =========================== -->
+  <section class="menu-section" id="bebidas">
+    <div class="section-header">
+      <h2 class="section-title"><span>🥤</span> Bebidas</h2>
+      <p class="section-sub">Para refrescar e completar a experiência</p>
+    </div>
+    <div class="cards-grid">
+
+      <div class="card" data-id="11" data-name="Refrigerante Lata" data-price="7.90">
+        <div class="card__img-wrap">
+          <div class="card__img card__img--11">
+            <div class="card__emoji">🥤</div>
+          </div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Refrigerante Lata</h3>
+          <p class="card__desc">Coca-Cola, Guaraná Antarctica, Sprite ou Fanta Laranja. Lata 350ml gelada.</p>
+          <div class="card__footer">
+            <span class="card__price">R$ 7,90</span>
+            <button class="btn btn--add" onclick="addToCart(11, 'Refrigerante Lata', 7.90)">+ Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-id="12" data-name="Milk Shake Artesanal" data-price="22.90">
+        <div class="card__img-wrap">
+          <div class="card__img card__img--12">
+            <div class="card__emoji">🥛</div>
+          </div>
+          <span class="card__badge badge--hot">Mais Pedido</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Milk Shake Artesanal</h3>
+          <p class="card__desc">500ml cremoso. Sabores: Ovomaltine, Nutella, Morango com Cheesecake ou Baunilha com Caramelo. Feito na hora.</p>
+          <div class="card__footer">
+            <span class="card__price">R$ 22,90</span>
+            <button class="btn btn--add" onclick="addToCart(12, 'Milk Shake Artesanal', 22.90)">+ Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-id="13" data-name="Água Mineral" data-price="4.90">
+        <div class="card__img-wrap">
+          <div class="card__img card__img--13">
+            <div class="card__emoji">💧</div>
+          </div>
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Água Mineral</h3>
+          <p class="card__desc">Garrafa 500ml com ou sem gás.</p>
+          <div class="card__footer">
+            <span class="card__price">R$ 4,90</span>
+            <button class="btn btn--add" onclick="addToCart(13, 'Água Mineral', 4.90)">+ Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===========================
+       CARDÁPIO — SOBREMESAS
+  =========================== -->
+  <section class="menu-section" id="sobremesas">
+    <div class="section-header">
+      <h2 class="section-title"><span>🍨</span> Sobremesas</h2>
+      <p class="section-sub">Finalize com um toque doce irresistível</p>
+    </div>
+    <div class="cards-grid">
+
+      <div class="card" data-id="14" data-name="Brownie com Sorvete" data-price="18.90">
+        <div class="card__img-wrap">
+          <div class="card__img card__img--14">
+            <div class="card__emoji">🍫</div>
+          </div>
+          <span class="card__badge badge--craft">Artesanal</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Brownie com Sorvete</h3>
+          <p class="card__desc">Brownie de chocolate meio amargo quentinho, acompanhado de 2 bolas de sorvete de baunilha e calda de caramelo salgado.</p>
+          <div class="card__footer">
+            <span class="card__price">R$ 18,90</span>
+            <button class="btn btn--add" onclick="addToCart(14, 'Brownie com Sorvete', 18.90)">+ Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-id="15" data-name="Churros Recheado" data-price="14.90">
+        <div class="card__img-wrap">
+          <div class="card__img card__img--15">
+            <div class="card__emoji">🍩</div>
+          </div>
+          <span class="card__badge badge--new">Novo</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__name">Churros Recheado</h3>
+          <p class="card__desc">3 unidades recheadas com Nutella ou doce de leite, empanados em açúcar e canela. Servidos com chantilly.</p>
+          <div class="card__footer">
+            <span class="card__price">R$ 14,90</span>
+            <button class="btn btn--add" onclick="addToCart(15, 'Churros Recheado', 14.90)">+ Adicionar</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===========================
+       DIFERENCIAIS
+  =========================== -->
+  <section class="diferenciais">
+    <div class="section-header section-header--center">
+      <h2 class="section-title">Por que escolher a Brasa & Craft?</h2>
+    </div>
+    <div class="dif-grid">
+      <div class="dif-card">
+        <span class="dif-icon">🥩</span>
+        <h4>Carne Selecionada</h4>
+        <p>Blend exclusivo de fraldinha e acém, moído diariamente para máxima frescura e sabor.</p>
+      </div>
+      <div class="dif-card">
+        <span class="dif-icon">🍞</span>
+        <h4>Pão Artesanal</h4>
+        <p>Brioche produzido por padaria parceira, com manteiga real e fermentação de 24h.</p>
+      </div>
+      <div class="dif-card">
+        <span class="dif-icon">⚡</span>
+        <h4>Atendimento Rápido</h4>
+        <p>Seu pedido confirmado em até 5 minutos pelo WhatsApp. Sem espera, sem complicação.</p>
+      </div>
+      <div class="dif-card">
+        <span class="dif-icon">🛵</span>
+        <h4>Entrega Ágil</h4>
+        <p>Entregadores parceiros em toda a Vila Madalena e Pinheiros. Prazo médio de 30 minutos.</p>
+      </div>
+      <div class="dif-card">
+        <span class="dif-icon">🌿</span>
+        <h4>Ingredientes Frescos</h4>
+        <p>Hortaliças e vegetais selecionados diariamente. Sem congelados, sem conservantes.</p>
+      </div>
+      <div class="dif-card">
+        <span class="dif-icon">🎉</span>
+        <h4>Promoções Exclusivas</h4>
+        <p>Ofertas relâmpago toda semana pelo nosso WhatsApp. Salve o número e fique por dentro.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       AVALIAÇÕES
+  =========================== -->
+  <section class="avaliacoes">
+    <div class="section-header section-header--center">
+      <h2 class="section-title">O que nossos clientes dizem</h2>
+      <p class="section-sub">Mais de 2.000 pedidos por mês e avaliação média de 4.9 ★</p>
+    </div>
+    <div class="reviews-grid">
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"O Double Smash Craft é simplesmente viciante. Já pedi 4 vezes essa semana. Melhor hambúrguer da Vila, sem dúvidas!"</p>
+        <div class="review-author">
+          <div class="review-avatar">M</div>
+          <div>
+            <strong>Mateus R.</strong>
+            <span>Pinheiros, SP</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Atendimento no WhatsApp super rápido, chegou em 25 minutos quentinho. O Combo Casal foi a pedida certa pra minha namorada e eu!"</p>
+        <div class="review-author">
+          <div class="review-avatar">A</div>
+          <div>
+            <strong>Ana C.</strong>
+            <span>Vila Madalena, SP</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"O Mushroom Truffle é outro nível! Nunca imaginei que hambúrguer com brie e trufas podia chegar tão gostoso por delivery."</p>
+        <div class="review-author">
+          <div class="review-avatar">G</div>
+          <div>
+            <strong>Gabriel F.</strong>
+            <span>Jardins, SP</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">"Milk shake de Ovomaltine top demais! E o atendimento é sempre atencioso. Recomendo pra todo mundo que passa pela Vila."</p>
+        <div class="review-author">
+          <div class="review-avatar">L</div>
+          <div>
+            <strong>Larissa M.</strong>
+            <span>Perdizes, SP</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===========================
+       FAQ
+  =========================== -->
+  <section class="faq">
+    <div class="section-header section-header--center">
+      <h2 class="section-title">Dúvidas frequentes</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Qual o horário de funcionamento?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Funcionamos de segunda a domingo, das 11h às 23h. Em feriados, confira nossas redes sociais para horários especiais.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Qual a área de entrega?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Entregamos em toda a Vila Madalena, Pinheiros, Jardins, Perdizes e Sumaré. Para outras regiões, entre em contato pelo WhatsApp para verificar disponibilidade.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Como funciona o pedido pelo WhatsApp?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Monte seu pedido aqui no cardápio, clique em "Finalizar no WhatsApp" e sua mensagem já estará pré-pronta para enviar. Confirmamos em até 5 minutos!</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Quais formas de pagamento são aceitas?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Aceitamos Pix, cartão de crédito/débito (maquininha na entrega) e dinheiro. Pagamento na entrega ou via Pix antecipado.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="toggleFaq(this)">
+          Posso fazer pedidos personalizados?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-a">Claro! Restrições alimentares, ingredientes extras ou trocas são bem-vindos. Informe no campo de observações ao finalizar pelo WhatsApp.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===========================
+       FOOTER
+  =========================== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logo">
+          <span class="logo-flame">🔥</span>
+          <span>Brasa <em>&amp;</em> Craft</span>
+        </div>
+        <p>Hamburgeria artesanal premium. Sabor de verdade, feito com cuidado e entregue com amor na sua porta.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="TikTok" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.27 6.27 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.17 8.17 0 004.78 1.52V6.78a4.85 4.85 0 01-1.01-.09z"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook" class="social-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Localização</h4>
+        <p>Rua Fradique Coutinho, 423<br/>Vila Madalena – São Paulo, SP<br/>CEP 05416-010</p>
+        <h4 style="margin-top:1.5rem;">Horário</h4>
+        <p>Seg–Sex: 11h às 23h<br/>Sáb–Dom: 11h às 00h</p>
+      </div>
+      <div class="footer__col">
+        <h4>Contato</h4>
+        <a href="https://wa.me/5511999999999" class="footer__link" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          (11) 99999-9999
+        </a>
+        <br/>
+        <a href="mailto:contato@brasacraft.com.br" class="footer__link">contato@brasacraft.com.br</a>
+      </div>
+    </div>
+
+    <!-- Aviso de site fictício + créditos -->
+    <div class="footer__disclaimer">
+      <p>
+        ⚠️ <strong>Este é um site fictício</strong>, desenvolvido como modelo comercial de cardápio digital. Todos os produtos, preços e informações são exemplos ilustrativos.
+      </p>
+      <p class="footer__credits">
+        Desenvolvido por <strong>Nathan Moura Vieira</strong>
+        <a href="https://github.com/vieiratechbr" target="_blank" rel="noopener" aria-label="GitHub de Nathan Moura Vieira" class="github-link">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+          </svg>
+          @vieiratechbr
+        </a>
+      </p>
+      <p class="footer__copy">© 2025 Brasa & Craft. Todos os direitos reservados ao modelo.</p>
+    </div>
+  </footer>
+
+  <!-- ===========================
+       BOTÃO FLUTUANTE WHATSAPP
+  =========================== -->
+  <a href="https://wa.me/5511999999999?text=Olá!%20Quero%20fazer%20um%20pedido%20no%20Brasa%20%26%20Craft!"
+     class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="whatsapp-float__pulse"></span>
+  </a>
+
+  <!-- ===========================
+       CARRINHO (DRAWER)
+  =========================== -->
+  <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+  <aside class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer__header">
+      <h3>Seu Pedido</h3>
+      <button class="cart-close" onclick="closeCart()" aria-label="Fechar carrinho">✕</button>
+    </div>
+    <div class="cart-drawer__body" id="cartBody">
+      <div class="cart-empty" id="cartEmpty">
+        <span>🛒</span>
+        <p>Seu carrinho está vazio.</p>
+        <small>Adicione itens do cardápio!</small>
+      </div>
+      <ul class="cart-list" id="cartList"></ul>
+    </div>
+    <div class="cart-drawer__footer" id="cartFooter" style="display:none">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span id="cartTotal">R$ 0,00</span>
+      </div>
+      <div class="cart-subtotal cart-subtotal--sm">
+        <span>Taxa de entrega</span>
+        <span>R$ 6,00</span>
+      </div>
+      <div class="cart-subtotal cart-subtotal--total">
+        <span>Total</span>
+        <span id="cartGrandTotal">R$ 6,00</span>
+      </div>
+      <button class="btn btn--whatsapp btn--full" onclick="finalizarPedido()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Finalizar no WhatsApp
+      </button>
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
